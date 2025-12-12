@@ -32,7 +32,11 @@ The client is the **Airline Management Team**.
 | :--- | :--- | :--- |
 | **BR1** | Identify and quantify the relationship (correlation) between key operational factors (e.g., travel class, loyalty, delay) and passenger satisfaction. | EDA & Hypothesis Testing |
 | **BR2** | Build a robust predictive model capable of classifying a passenger as 'Satisfied' or 'Dissatisfied' based on their profile and service ratings, allowing for real-time risk assessment. | Predictive Modeling |
+## 3. 🏗️ Project Management
 
+* **Kanban Board:** [Link to GitHub Project Board](https://github.com/users/kumuduuk/projects/4/views/1)
+
+![Project Board](images/kanban.png)
 ## 3. 🧪 Hypothesis and Validation
 
 The following hypotheses were tested using the cleaned, engineered data:
@@ -81,6 +85,8 @@ The model is considered successful if it achieves high predictive accuracy, prio
 ## 6. 🎨 Dashboard Design (Streamlit)
 
 The Streamlit dashboard (`streamlit_dashboard.py`) is organized for clear communication and interactive modeling:
+
+> [Airline Customer Satisfaction Dashboard](https://capstone-airline-passenger-satisfaction.streamlit.app/)
 
 | Page | Content & Purpose |
 | :--- | :--- |
