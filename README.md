@@ -1,5 +1,5 @@
 # ✈️ README: Airline Passenger Satisfaction Prediction
-
+![banner](images/banner.png)
 ## 1. 📋 Dataset Content
 
 The project utilizes data derived from an airline survey, combining two files (`train.csv` and `test.csv`). The dataset contains over 100,000 records of individual passenger experiences.
@@ -37,7 +37,7 @@ The client is the **Airline Management Team**.
 * **Kanban Board:** [Link to GitHub Project Board](https://github.com/users/kumuduuk/projects/4/views/1)
 
 ![Project Board](images/kanban.png)
-## 3. 🧪 Hypothesis and Validation
+## 4. 🧪 Hypothesis and Validation
 
 The following hypotheses were tested using the cleaned, engineered data:
 
@@ -49,14 +49,14 @@ The following hypotheses were tested using the cleaned, engineered data:
 | **Hypothesis 4:** Travel Class affects passenger satisfaction. | Chi-Squared Test of Independence ($\text{H}_0$: No association between Class and satisfaction). | **Rejected $\text{H}_0$.** Business Class has significantly higher satisfaction. |
 | **Hypothesis 5:** Longer flight delays decrease passenger satisfaction. | Independent Samples T-test (Welch's) ($\text{H}_0$: Mean delay is the same for satisfied vs. dissatisfied groups). | **Rejected $\text{H}_0$.** Longer delays are significantly associated with lower satisfaction. |
 
-## 4. 🗺️ The Rationale to Map Business Requirements to Tasks
+## 5. 🗺️ The Rationale to Map Business Requirements to Tasks
 
 | Business Requirement | Data Analytics Task | Rationale |
 | :--- | :--- | :--- |
 | **BR1: Correlation Study** | **EDA, Data Visualization, and Statistical Hypothesis Testing.** | Visual analysis (e.g., count plots, box plots) identifies patterns, while $\chi^2$ and T-tests formally prove if the relationships (e.g., Class vs. Satisfaction) are statistically significant, providing actionable business insights. |
 | **BR2: Prediction Model** | **Classification Analysis (Random Forest).** | Building a classification model predicts the binary outcome (`satisfied` or `dissatisfied`). The model's feature importance scores formally quantify which individual services drive satisfaction most (Hypothesis 4), guiding investment decisions. |
 
-## 5. 💼 ML Business Case: Predicting Passenger Satisfaction
+## 6. 💼 ML Business Case: Predicting Passenger Satisfaction
 
 **Objective:** To predict whether a new passenger will be 'Satisfied' (1) or 'Dissatisfied' (0) based on their profile and service ratings.
 
@@ -82,7 +82,7 @@ The model is considered successful if it achieves high predictive accuracy, prio
 | :--- | :--- | :--- | :--- |
 | **Random Forest (Final)** | **0.9918** | **0.95** | **Success.** Exceeded all criteria. |
 
-## 6. 🎨 Dashboard Design (Streamlit)
+## 7. 🎨 Dashboard Design (Streamlit)
 
 The Streamlit dashboard (`streamlit_dashboard.py`) is organized for clear communication and interactive modeling:
 
@@ -96,7 +96,7 @@ The Streamlit dashboard (`streamlit_dashboard.py`) is organized for clear commun
 | **Main Page: Feature Impact (H3, H5)** | Boxplots showing the distribution of the **Total Service Score** and **Departure Delay** for satisfied vs. dissatisfied passengers. |
 | **Main Page: Model Summary** | Technical table comparing the performance of the **Logistic Regression Baseline** vs. the **Random Forest Final Model** (addressing BR2). |
 
-## 7. 🐞 Unfixed Bugs
+## 8. 🐞 Unfixed Bugs
 
 The project is currently stable and all known critical bugs were fixed during development.
 
@@ -109,7 +109,7 @@ The project is currently stable and all known critical bugs were fixed during de
 | **Seaborn `ValueError` (Plotting)** | **Description:** The visualizations failed because the target variable (`satisfaction`) was read as an integer, but the provided Seaborn palette used string keys (`'0'`, `'1'`). |
 | | **Solution:** The `satisfaction` column in the loaded visualization data (`df_train`) was explicitly cast to `str` type, ensuring consistency with the palette keys. |
 
-## 8. ⚙️ Deployment
+## 9. ⚙️ Deployment
 
 The application is designed for easy deployment.
 
@@ -141,7 +141,7 @@ The application is designed for easy deployment.
     streamlit run streamlit/streamlit_dashboard.py
     ```
 
-## 9. 📚 Main Data Analysis and Machine Learning Libraries
+## 10. 📚 Main Data Analysis and Machine Learning Libraries
 
 | Library | Purpose |
 | :--- | :--- |
@@ -153,9 +153,9 @@ The application is designed for easy deployment.
 | **Joblib** | Serialization and saving of the final machine learning pipeline (`.pkl`). |
 | **SciPy** | Statistical hypothesis testing ($\chi^2$, T-tests). |
 
-## 10. ⭐️ Credits
+## 11. ⭐️ Credits
 
 | Category | Reference |
 | :--- | :--- |
 | **Content & Logic** | Project workflow derived from Data Analytics Course Capstone requirements. Statistical analysis and modeling adapted from standard Scikit-learn documentation. |
-| **Media & Data** | The `train.csv` and `test.csv` datasets were provided for this capstone project. |
+| **Media & Data** | The `train.csv` and `test.csv` datasets were taken from [kaggle](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction). |
