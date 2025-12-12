@@ -1,5 +1,5 @@
 # ✈️ README: Airline Passenger Satisfaction Prediction
-
+![banner](images/banner.png)
 ## 1. 📋 Dataset Content
 
 The project utilizes data derived from an airline survey, combining two files (`train.csv` and `test.csv`). The dataset contains over 100,000 records of individual passenger experiences.
@@ -158,4 +158,4 @@ The application is designed for easy deployment.
 | Category | Reference |
 | :--- | :--- |
 | **Content & Logic** | Project workflow derived from Data Analytics Course Capstone requirements. Statistical analysis and modeling adapted from standard Scikit-learn documentation. |
-| **Media & Data** | The `train.csv` and `test.csv` datasets were provided for this capstone project. |
+| **Media & Data** | The `train.csv` and `test.csv` datasets were taken from [kaggle](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction). |
